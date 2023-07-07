@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log(e);
   }
   var popupTimeout = setTimeout(openPopup, 300000, 'popupTimer');
+  clearTimeout(popupTimeout);
   var isOpenPopup = false;
   var main = document.getElementById('main');
   // main.addEventListener('click', function(e) {
