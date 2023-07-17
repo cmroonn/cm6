@@ -1,16 +1,16 @@
 'use strict';
 
 document.addEventListener("DOMContentLoaded", function () {
-  try {
-    if (window.innerWidth <= 500) {
-      var elems = document.querySelectorAll(".marquee .open-basic-popup");
-      elems.forEach(function (el) {
-        el.classList.remove('open-basic-popup');
-      });
-    }
-  } catch (e) {
-    console.log(e);
-  }
+  // try {
+  //   if (window.innerWidth <= 500) {
+  //     var elems = document.querySelectorAll(".marquee .open-basic-popup");
+  //     elems.forEach(function (el) {
+  //       el.classList.remove('open-basic-popup');
+  //     });
+  //   }
+  // } catch (e) {
+  //   console.log(e);
+  // }
   var popupTimeout = setTimeout(openPopup, 300000, 'popupTimer');
   clearTimeout(popupTimeout);
   var isOpenPopup = false;
