@@ -293,6 +293,12 @@ a.basic-btn {
   margin-top: calc(120 / 1600 * 100vw);
 }
 
+@media (max-width: 500px) {
+  .zapis2 {
+    border-radius: calc(20 / 360 * 100vw);
+  }
+}
+
 .zapis__content {
   background-image: url("../images/bg-zapis.png");
   background-size: cover;
@@ -322,7 +328,7 @@ a.basic-btn {
     height: 97.2222222222vw;
     width: calc(100% + 5.5555555556vw);
     margin-left: -2.7777777778vw;
-    border-radius: 0;
+    border-radius: calc(20 / 360 * 100vw);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -3614,7 +3620,8 @@ a.basic-btn {
 }
 @media (max-width: 500px) {
   .facts__card {
-    width: 72.2222222222vw;
+    /*width: 72.2222222222vw;*/
+    width: calc(340 / 360 * 100vw);
     padding: 8.3333333333vw 5.8333333333vw 4.1666666667vw 6.9444444444vw;
     min-height: 72.2222222222vw;
     border-radius: 5.5555555556vw;
@@ -3675,7 +3682,7 @@ a.basic-btn {
 }
 @media (max-width: 500px) {
   .facts2 .facts__card {
-    padding-bottom: 8.3333333333vw;
+    padding-bottom: 4.3333333333vw;
   }
 }
 .facts2 .facts__card__icon {
@@ -3694,10 +3701,14 @@ a.basic-btn {
   margin: 0.8125vw 0 0.9375vw;
 }
 @media (max-width: 500px) {
+  .facts5 .facts__card {
+    margin-bottom: calc(20 / 360 * 100vw);
+  }
   .facts__card__title {
     font-size: 4.4444444444vw;
-    margin: 8.3333333333vw 0 4.1666666667vw;
-    max-width: 38.3333333333vw;
+    /*margin: 8.3333333333vw 0 4.1666666667vw;*/
+    /*max-width: 38.3333333333vw; */
+    margin: calc(18 / 360 * 100vw) 0 calc(5 / 360 * 100vw);
   }
 }
 
@@ -3722,6 +3733,8 @@ a.basic-btn {
   .facts__card-bonus {
     padding-left: 6.1111111111vw;
     padding-right: 5.5555555556vw;
+    min-height: calc(210 / 360 * 100vw);
+    padding-top: calc(25 / 360 * 100vw);
   }
   .facts__card-bonus p {
     font-size: 5vw;
@@ -3729,7 +3742,8 @@ a.basic-btn {
   .facts__card-bonus img {
     width: 40.5555555556vw;
     height: 35vw;
-    left: 7.7777777778vw;
+    bottom: calc(5 / 360 * 100vw);
+    right: calc(20 / 360 * 100vw);
   }
 }
 
@@ -4408,7 +4422,7 @@ a.basic-btn {
 @media (max-width: 500px) {
   .stats__item-2 img {
     width: 26.3888888889vw;
-    height: 23.6111111111vw;
+    height: 26.3888888889vw;
     bottom: unset;
     top: 50%;
     transform: translate(0, -50%);
@@ -4489,7 +4503,7 @@ a.basic-btn {
     bottom: unset;
     top: 50%;
     transform: translate(0, -50%);
-    right: 2.2222222222vw;
+    right: 5.2222222222vw;
   }
 }
 
@@ -5684,7 +5698,14 @@ a.basic-btn {
 }
 
 .get-access-5 .get-access__heading {
-  max-width: calc(560 / 1600 * 100vw);
+  max-width: calc(525 / 1600 * 100vw);
+}
+
+@media (max-width: 500px) {
+  .get-access-5 .get-access__heading {
+    max-width: 68vw;
+
+  }
 }
 
 .program {
@@ -5820,6 +5841,12 @@ a.basic-btn {
   display: unset;
 }
 
+@media (max-width: 500px) {
+  .program2 .program__module__heading h3 b {
+    display: block;
+  }
+}
+
 .program__module-2 img {
   width: calc(100% + (100 / 1600 * 100vw));
   margin-left: calc(-50 / 1600 * 100vw);
@@ -5838,6 +5865,18 @@ a.basic-btn {
   }
   .program__module img.mob {
     display: block;
+  }
+
+  .program__module-3 img,
+  .program__module-2 img{
+    width: calc(100% + (100 / 360 * 100vw));
+    margin-left: calc(-50 / 360 * 100vw);
+    margin-top: calc(20 / 360 * 100vw);
+  }
+
+  .program__module-bonus img {
+    width: 100%;
+    margin-left: 0;
   }
 }
 
@@ -5887,6 +5926,10 @@ a.basic-btn {
     margin: 11.1111111111vw auto 4.7222222222vw;
     width: 88.8888888889vw;
     height: 19.4444444444vw;
+  }
+
+  .program2 .program__show-btn {
+    margin-top: calc(10 / 360 * 100vw);
   }
 }
 
@@ -8401,7 +8444,7 @@ li.creator__text__name {
   .questions__girl {
     width: 96.6666666667vw;
     height: 114.4444444444vw;
-    bottom: 109.7222222222vw;
+    bottom: 84.7222222222vw;
     left: -2.5vw;
   }
 }
@@ -8976,10 +9019,16 @@ form.popup-timer__form {
   right: 0;
 }
 
+.interview-btn {
+  width: calc(400 / 1600 * 100vw);
+  margin-left: calc(79 / 1600 * 100vw);
+}
+
 @media (max-width: 500px) {
 
   .interview-btn {
     width: 100%;
+    margin-left: 0;
   }
   .interview__content {
     background-image: url("../images/interview-bg-mob.svg");
