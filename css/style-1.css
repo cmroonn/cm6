@@ -887,6 +887,10 @@ a.basic-btn {
     margin-left: auto;
     margin-right: auto;
   }
+
+  .welcome__offer__desc-6 span {
+    display: inline-block;
+  }
 }
 
 .welcome__offer__guide__pic {
@@ -1469,6 +1473,10 @@ a.basic-btn {
   .course-content__item__text {
     font-size: 4.4444444444vw;
     max-width: unset;
+  }
+
+  .course-content__item__text span {
+    display: block;
   }
 }
 
@@ -2287,7 +2295,27 @@ a.basic-btn {
     width: 100%;
     border-radius: 5.5555555556vw;
   }
+
+  .get-access-5 .get-access__pic {
+    width: calc(70 / 360 * 100vw);
+    height: calc(70 / 360 * 100vw);
+  }
+
+  .get-access-5 .get-access__heading {
+    float: right;
+    margin-top: calc(5 / 360 * 100vw);
+    margin-right: calc(23 / 360 * 100vw);
+  }
+
+  .get-access-5 .get-access__heading  span {
+    display: block;
+  }
+
+  .get-access-5 .get-access__btn {
+    width: calc(320 / 360 * 100vw);
+  }
 }
+
 
 .services {
   background-color: #F2F6FC;
@@ -3659,6 +3687,10 @@ a.basic-btn {
   .facts__card__text {
     font-size: 4.4444444444vw;
   }
+
+  .facts__card__text span{
+    display: inline-block;
+  }
 }
 
 .facts2 {
@@ -3670,6 +3702,9 @@ a.basic-btn {
   background-color: #F2F6FC;
 }
 
+.facts6 {
+  padding-bottom: calc(280 / 1600 * 100vw);
+}
 
 .facts2 .facts__content {
   grid-template-columns: 1fr 1fr 1fr;
@@ -4196,9 +4231,9 @@ a.basic-btn {
     background-image: none;
     background-color: #fff;
     border-radius: 5.5555555556vw;
-    padding: 6.9444444444vw 5.2777777778vw;
+    padding: 6.9444444444vw 4.2777777778vw;
     height: unset;
-    width: 86.7222222222vw;
+    width: 84vw;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -4233,8 +4268,8 @@ a.basic-btn {
     text-align: center;
   }
   .level__content__info__points h3 img {
-    width: 12vw;
-    height: 12vw;
+    width: 14vw;
+    height: 14vw;
     margin-right: 0;
     transform: rotate(-12deg);
   }
@@ -4883,6 +4918,7 @@ a.basic-btn {
   position: relative;
   margin-bottom: 3.75vw;
   border: none;
+  overflow: hidden;
 }
 .structure__item.structure__item-reverse {
   padding-left: 34.375vw;
@@ -6030,8 +6066,6 @@ a.basic-btn {
   width: calc(400 / 1600 * 100vw);
   height: calc(660 / 1600 * 100vw);
   position: relative;
-  border-radius: calc(30 / 1600 * 100vw);
-  overflow: hidden;
   flex-shrink: 0;
   margin-right: calc(95 / 1600 * 100vw);
 }
@@ -6041,6 +6075,7 @@ a.basic-btn {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: calc(30 / 1600 * 100vw);
 }
 
 @media (max-width: 500px) {
@@ -6067,7 +6102,7 @@ a.basic-btn {
 .creator__text li {
   font-size: calc(16 / 1600 * 100vw);
   display: flex;
-  margin-bottom: calc(22 / 1600 * 100vw);
+  margin-bottom: calc(25 / 1600 * 100vw);
   line-height: 140%;
 }
 
@@ -6323,6 +6358,9 @@ li.creator__text__name {
   margin-bottom: 3.4375vw;
 }
 @media (max-width: 500px) {
+  .faq {
+    margin-top: calc(100 / 360 * 100vw);
+  }
   .faq__title {
     margin-bottom: 9.7222222222vw;
   }
@@ -6489,6 +6527,7 @@ li.creator__text__name {
 }
 .credit__item img {
   width: 100%;
+  border-radius: calc(10 / 1600 * 100vw);
 }
 @media (max-width: 500px) {
   .credit__item {
@@ -6497,6 +6536,10 @@ li.creator__text__name {
     border-radius: 5.5555555556vw;
     padding: 2.7777777778vw;
     margin-bottom: 8.3333333333vw;
+  }
+
+  .credit__item img {
+    border-radius: calc(10 / 360 * 100vw);
   }
 }
 
@@ -6812,6 +6855,10 @@ li.creator__text__name {
   .portfolio__content__text:before {
     display: none;
   }
+
+  .portfolio__content__text {
+    padding: 0 calc(20 / 360 * 100vw);
+  }
 }
 
 .community__title {
@@ -7087,6 +7134,7 @@ li.creator__text__name {
 @media (max-width: 500px) {
   .cases__item__body {
     font-size: 4.4444444444vw;
+    padding: 0 calc(20 / 360 * 100vw);
   }
   .cases__item__body p {
     text-align: center;
@@ -7242,6 +7290,10 @@ li.creator__text__name {
   }
   .tarif__name span {
     font-size: 4.4444444444vw;
+  }
+
+  .tarif__name2 {
+    padding-left: 0;
   }
 }
 
@@ -7404,15 +7456,20 @@ li.creator__text__name {
 
   .tarif__content2 .tarif__item {
     padding-top: calc(110 / 360 * 100vw);
-    height: calc(1090 / 360 * 100vw);
+    height: auto;
     margin-bottom: calc(165 / 360 * 100vw);
   }
 
   .tarif__content2 .tarif__item:last-child {
     margin-bottom: calc(30 / 360 * 100vw);
   }
+
+  .tarif__content2 .tarif__old-price {
+    margin-top: calc(30 / 360 * 100vw);
+  }
   .tarif__item__pic2 {
     top: calc(-120 / 360 * 100vw);
+    left: 50%;
   }
 }
 
@@ -7501,6 +7558,9 @@ li.creator__text__name {
   .tarif__bottom__courses {
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: calc(50 / 360 * 100vw);
+    grid-column-gap: calc(30 / 360 * 100vw);
+    padding: 0 calc(25 / 360 * 100vw);
+    margin-top: calc(40 / 360 * 100vw);
   }
 
   .tarif__bottom__courses img {
@@ -7562,14 +7622,41 @@ li.creator__text__name {
   color: #252D4D;
   font-weight: 700;
 }
+
+.tarif__item-3 {
+  border: 1px solid #0061F4;
+}
 @media (max-width: 500px) {
   .tarif .get-access {
-    display: none;
+    margin-left:0;
+    margin-right: 0;
+    max-width: unset;
+    width: calc(100% + (20 / 360 * 100vw));
+    margin-left: calc(-10 / 360 * 100vw);
+    margin-bottom: calc(50 / 360 * 100vw);
+  }
+
+  .tarif .get-access .container {
+    padding: 0;
+  }
+
+  .tarif .get-access .get-access__wrapper {
+    width: 100%;
+    padding-top: calc(15 / 360 * 100vw);
+  }
+
+  .tarif .get-access .basic-btn {
+    width: calc(300 / 360 * 100vw);
+    margin-top: calc(15 / 360 * 100vw);
+    height: calc(70 / 360 * 100vw);
   }
 
 
   .tarif .get-access__heading {
     font-size: calc(16 / 360 * 100vw);
+    float: right;
+    margin-top: calc(12 / 360 * 100vw);
+    margin-right: calc(13 / 360 * 100vw);
   }
 
   .tarif .get-access__pic {
@@ -7686,10 +7773,13 @@ li.creator__text__name {
 }
 @media (max-width: 500px) {
   .reviews__content {
-    width: 100%;
+    width: calc(100% + calc(20 / 360 * 100vw));
+    margin-left: calc(-10 / 360 * 100vw);
+
+
   }
   .reviews__content .swiper {
-    padding: 12.5vw 0;
+    padding: 12.5vw calc(10 / 360 * 100vw);
     margin-left: 0;
   }
 }
@@ -7789,6 +7879,10 @@ li.creator__text__name {
     padding: 0;
     max-width: 41.6666666667vw;
   }
+
+  .database__item p p {
+    display: block;
+  }
   .database__item img {
     width: 38.8888888889vw;
     height: 24.4444444444vw;
@@ -7857,6 +7951,7 @@ li.creator__text__name {
   .rating__item__heading {
     font-size: 5.5555555556vw;
     margin: 0 0 5.5555555556vw;
+    padding: 0 calc(20 / 360 * 100vw);
   }
 }
 
@@ -7874,7 +7969,7 @@ li.creator__text__name {
   .rating__item__digit {
     font-size: 27.7777777778vw;
     top: 0;
-    right: 8.3333333333vw;
+    right: 3.3333333333vw;
   }
 }
 
@@ -7885,6 +7980,8 @@ li.creator__text__name {
 @media (max-width: 500px) {
   .rating__item__info {
     flex-direction: column;
+    padding: 0 calc(20 / 360 * 100vw);
+
   }
 }
 
@@ -8065,7 +8162,7 @@ li.creator__text__name {
     padding: 1.9444444444vw 4.4444444444vw;
     border-radius: 1.3888888889vw;
     left: unset;
-    right: 15.2777777778vw;
+    right: 13.2777777778vw;
     bottom: -8.3333333333vw;
   }
 }
@@ -8428,7 +8525,7 @@ li.creator__text__name {
 }
 @media (max-width: 500px) {
   .questions__offer__subheading {
-    font-size: 4.4444444444vw;
+    font-size: calc(26 / 360 * 100vw);
     text-align: center;
   }
 }
@@ -9006,7 +9103,7 @@ form.popup-timer__form {
 .interview__heading {
   width: calc(560 / 1600 * 100vw);
   position: sticky;
-  top: 0;
+  top: calc(100 / 1600 * 100vw);
   left: 0;
   position: -webkit-sticky;
 }
@@ -9053,10 +9150,11 @@ form.popup-timer__form {
   }
 
   .interview__heading svg {
-    width: calc(400 / 360 * 100vw);
-    height: calc(40 / 360 * 100vw);
-    bottom: calc(-37 / 360 * 100vw);
-    right: calc(-30  /360 * 100vw);
+    width: calc(450 / 360 * 100vw);
+    height: calc(50 / 360 * 100vw);
+    bottom: calc(-43 / 360 * 100vw);
+    right: calc(-55  /360 * 100vw);
+    transform: rotate(1deg);
   }
 
 
@@ -9142,6 +9240,10 @@ form.popup-timer__form {
     margin-right: calc(19 / 360 * 100vw);
   }
 
+  .interview__requirements__item__text {
+    margin-top: calc(-3 / 360 * 100vw);
+  }
+
   .interview__requirements__item__text ul li svg {
     margin-right: calc(15 / 360 * 100vw);
     width: calc(20 / 360 * 100vw);
@@ -9162,4 +9264,14 @@ form.popup-timer__form {
   max-width: calc(1060 / 1600 * 100vw);
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (max-width: 500px) {
+  .results__item__title span {
+    display: block;
+  }
+
+  .results__item-6.results__item-horizontal-2 {
+    background-size: 165% 50%;
+  }
 }
