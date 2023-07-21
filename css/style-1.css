@@ -454,6 +454,7 @@ a.basic-btn {
   font-weight: 700;
   width: max-content;
   font-size: 1vw;
+  z-index: 5;
 }
 @media (max-width: 500px) {
   .video-reviews__plate {
@@ -7821,7 +7822,7 @@ li.creator__text__name {
   height: 8.75vw;
   padding-right: 0.625vw;
 }
-.database__item span {
+.database__item__digit {
   font-size: 6.25vw;
   position: absolute;
   left: 2.1875vw;
@@ -7880,7 +7881,7 @@ li.creator__text__name {
     max-width: 41.6666666667vw;
   }
 
-  .database__item p p {
+  .database__item p span {
     display: block;
   }
   .database__item img {
@@ -7890,7 +7891,7 @@ li.creator__text__name {
     right: 2.7777777778vw;
     top: 2.7777777778vw;
   }
-  .database__item span {
+  .database__item__digit{
     position: static;
     font-size: 11.1111111111vw;
     transform: unset;
