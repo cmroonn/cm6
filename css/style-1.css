@@ -9325,7 +9325,7 @@ form.popup-timer__form {
   }
 
   .interview__requirements__item__text {
-    margin-top: calc(-3 / 360 * 100vw);
+    margin-top: calc(-1 / 360 * 100vw);
   }
 
   .interview__requirements__item__text ul li svg {
