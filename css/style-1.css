@@ -9313,7 +9313,7 @@ form.popup-timer__form {
 
   .interview__requirements__item__text p {
     font-size: calc(16 / 360 * 100vw);
-    margin-top: calc(10 / 360 * 100vw);
+    margin-top: calc(6 / 360 * 100vw);
     line-height: 130%;
   }
 
