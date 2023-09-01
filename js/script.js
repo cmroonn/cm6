@@ -11,6 +11,22 @@ document.addEventListener("DOMContentLoaded", function () {
   // } catch (e) {
   //   console.log(e);
   // }
+
+  try {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to(".pochet__notebook", {
+      scrollTrigger: {
+        trigger: ".pochet__notebook",
+        scrub: 3
+      },
+      top: 300,
+      ease: "linear",
+      duration: 10
+    });
+  } catch(e) {
+    console.log(e);
+  }
+
   var popupTimeout = setTimeout(openPopup, 300000, 'popupTimer');
   clearTimeout(popupTimeout);
   var isOpenPopup = false;
@@ -596,6 +612,165 @@ document.addEventListener("DOMContentLoaded", function () {
           }
         }
       });
+    });
+  } catch (e) {
+    console.log(e);
+  }
+
+  try {
+    var swiper = new Swiper('.free-events__slider', {
+      speed: 400,
+      spaceBetween: 20,
+      slidesPerView: 1,
+      navigation: {
+        nextEl: '.free-events .swiper-button-next-2',
+        prevEl: '.free-events .swiper-button-prev-2'
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets'
+      },
+      breakpoints: {
+        501: {
+          slidesPerView: 3
+        }
+      }
+    });
+  } catch (e) {
+    console.log(e);
+  }
+
+  try {
+    const btn = document.querySelector(".courses__show-more");
+    const accordion = document.querySelector(".courses__content-accordion");
+
+    btn.addEventListener("click", function () {
+      accordion.classList.toggle("active");
+      if (accordion.classList.contains("active")) {
+        btn.innerText = 'Скрыть';
+      } else {
+        btn.innerText = 'Показать все курсы';
+      }
+    })
+  } catch (e) {
+    console.log(e);
+  }
+
+  try {
+    const btn = document.querySelector(".welcome__head__menu__courses");
+    const dropdownMenu = document.querySelector(".menu-dropdown-courses");
+
+    btn.addEventListener('click', function () {
+      dropdownMenu.classList.toggle('active');
+      btn.classList.toggle('active');
+    });
+
+    dropdownMenu.addEventListener('mouseleave', function (e) {
+      dropdownMenu.classList.remove('active');
+      btn.classList.remove('active');
+    });
+  } catch (e) {
+    console.log(e);
+  }
+
+  try {
+    const btn = document.querySelector(".welcome__head__menu__point-free");
+    const dropdownMenu = document.querySelector(".menu-dropdown-free");
+
+    btn.addEventListener('mouseover', function () {
+      dropdownMenu.classList.toggle('active');
+      // btn.classList.toggle('active');
+    });
+
+    btn.addEventListener('mouseout', function () {
+      dropdownMenu.classList.remove('active');
+      // btn.classList.toggle('active');
+    });
+
+    dropdownMenu.addEventListener('mouseleave', function (e) {
+      dropdownMenu.classList.remove('active');
+      // btn.classList.remove('active');
+    });
+
+    dropdownMenu.addEventListener('mouseover', function (e) {
+      dropdownMenu.classList.add('active');
+      // btn.classList.remove('active');
+    });
+  } catch (e) {
+    console.log(e);
+  }
+
+  try {
+    const btn = document.querySelector(".welcome__head__menu__graduates");
+    const dropdownMenu = document.querySelector(".menu-dropdown-graduates");
+
+    btn.addEventListener('mouseover', function () {
+      dropdownMenu.classList.toggle('active');
+      // btn.classList.toggle('active');
+    });
+
+    btn.addEventListener('mouseout', function () {
+      dropdownMenu.classList.remove('active');
+      // btn.classList.toggle('active');
+    });
+
+    dropdownMenu.addEventListener('mouseleave', function (e) {
+      dropdownMenu.classList.remove('active');
+      // btn.classList.remove('active');
+    });
+
+    dropdownMenu.addEventListener('mouseover', function (e) {
+      dropdownMenu.classList.add('active');
+      // btn.classList.remove('active');
+    });
+  } catch (e) {
+    console.log(e);
+  }
+
+  try {
+    const burger = document.querySelector(".welcome__head__burger");
+    const menu = document.querySelector(".menu-mobile");
+    const closeBtn = document.querySelector(".menu-mobile__close-btn");
+
+    burger.addEventListener("click" ,function () {
+      menu.classList.add("active");
+      document.body.classList.add("blocked");
+    });
+
+    closeBtn.addEventListener("click" ,function () {
+      menu.classList.remove("active");
+      document.body.classList.remove("blocked");
+
+    });
+
+  } catch (e) {
+    console.log(e);
+  }
+
+  try {
+    const mobileDropdown = document.querySelectorAll(".menu-mobile-dropdown");
+    const subMenus = document.querySelectorAll(".menu-mobile__nav__submenu");
+
+    subMenus.forEach(function(menu) {
+      menu.dataset.height = `${menu.clientHeight}`;
+      menu.style.height = '0px';
+    });
+
+    mobileDropdown.forEach(function(elem) {
+      elem.addEventListener("click", function (e) {
+        e.preventDefault();
+        const parent = elem.closest("li");
+        const menu = parent.querySelector(".menu-mobile__nav__submenu");
+
+        menu.classList.toggle("active");
+        elem.classList.toggle("active");
+
+        if (menu.classList.contains("active")) {
+          menu.style.height = menu.dataset.height + 'px';
+        } else {
+          menu.style.height = '0px';
+        }
+      })
     });
   } catch (e) {
     console.log(e);
